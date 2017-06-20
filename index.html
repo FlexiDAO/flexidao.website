@@ -22,6 +22,35 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.0/css/bootstrap-slider.min.css" rel="stylesheet">
+	<!-- bootstrap & fontawesome css -->
+	<link href="http://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
+
+	<!-- BootstrapValidator CSS -->
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+	<!-- jQuery and Bootstrap JS -->
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<!-- BootstrapValidator JS -->
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+	  
+	<!-- Animated Loading Icon -->
+	<style type="text/css">
+	  .glyphicon-refresh-animate {
+		  -animation: spin .7s infinite linear;
+		  -webkit-animation: spin2 .7s infinite linear;
+	  }
+	  @-webkit-keyframes spin2 {
+		  from { -webkit-transform: rotate(0deg);}
+		  to { -webkit-transform: rotate(360deg);}
+	  }
+	  @keyframes spin {
+		  from { transform: scale(1) rotate(0deg);}
+		  to { transform: scale(1) rotate(360deg);}
+	  }
+	</style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +71,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Charging
+                    <i class="fa fa-play-circle"></i> <span class="light">HOME</span>
                 </a>
             </div>
 
@@ -133,15 +162,63 @@
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
+		 <div class="container">
+			  <hr>
+			  <form class="form-horizontal" role="form" id="test-form">
+				<div class="form-group">
+				  <label class="col-lg-3 control-label">Full Name</label>
+				  <div class="col-lg-3 inputGroupContainer">
+					<div class="input-group">
+					  <input type="text" class="form-control" name="Name" placeholder="John Smith"/>
+					</div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label class="col-lg-3 control-label">Email</label>
+				  <div class="col-lg-3 inputGroupContainer">
+					<div class="input-group">
+					  <input type="text" class="form-control" name="email" placeholder="name@domain.com"/>
+					</div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label class="col-lg-3 control-label">Contact number (optional)</label>
+				  <div class="col-lg-3 inputGroupContainer">
+					<div class="input-group">
+					  <input type="text" class="form-control" name="phoneNumber" placeholder="(country code)123456789" ></input>
+					</div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label class="col-lg-3 control-label">Comments & Questions</label>
+				  <div class="col-lg-3 inputGroupContainer">
+					<div class="input-group col-lg-10">
+					  <textarea type="text" class="form-control" name="notes" placeholder="Comments or questions?" rows="4" style="resize: vertical;"></textarea>
+					</div>
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <div class="col-lg-9 col-lg-offset-3">
+					<button type="submit" class="btn btn-default" id="postForm">Submit</button>
+				  </div>
+				</div>
+
+			  </form>
+
+		</div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact UPCoin team</h2>
                 <p>Feel free to email us to provide some feedback on our project, give us suggestions for new improvments and features, or to just say hello!</p>
-                <p><a href="mailto:upccoin@gmail.com">upccoin@gmail.com</a>
+                <p><a href="mailto:contact@flexidao.com">contact@flexidao.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                  <li>
-                        <a href="https://github.com/gregSimo" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        <a href="https://github.com/SolarLibary" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
             </ul>
             </div>
@@ -156,8 +233,11 @@
         <div class="container text-center">
             <p>Copyright &copy; Grzegorz Bytniewski and Simone Accornero, 2017</p>
         </div>
+		
     </footer>
-
+	<!-- Bootstrap Validator -->
+	<script src="validation-functions.js"></script>	
+   
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
