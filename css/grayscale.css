@@ -33,7 +33,7 @@ p {
 }
 @media (min-width: 768px) {
   p {
-    margin: 0 0 35px;
+    margin: 0 0 10px;
     font-size: 20px;
     line-height: 1.6;
   }
@@ -54,14 +54,14 @@ a:focus {
 }
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: black;
 }
 .navbar-custom .navbar-toggle {
   color: white;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0);
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
@@ -96,7 +96,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(60, 220, 163, 0.5);
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -112,9 +112,9 @@ a:focus {
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
-    padding: 0;
+    padding: 20px 0;
     background: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.3);
   }
 }
 .intro {
@@ -258,14 +258,14 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 150px;
   }
   .download-section {
     padding: 100px 0;
   }
   #map {
-    height: 400px;
-    margin-top: 250px;
+    height: 200px;
+    margin-top: 20px;
   }
 }
 .btn {

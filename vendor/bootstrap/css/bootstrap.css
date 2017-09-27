@@ -1128,6 +1128,12 @@ img {
 .img-rounded {
   border-radius: 6px;
 }
+.img-custom{
+  padding-top: 60px;
+}
+.img-custom2{
+  padding: 15px;
+}
 .img-thumbnail {
   display: inline-block;
   max-width: 100%;
@@ -1303,7 +1309,7 @@ p {
 }
 small,
 .small {
-  font-size: 85%;
+  font-size: 75%;
 }
 mark,
 .mark {
@@ -4229,7 +4235,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
+  margin-right: 0px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
