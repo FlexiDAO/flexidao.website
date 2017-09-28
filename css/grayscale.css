@@ -112,7 +112,7 @@ a:focus {
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
-    padding: 20px 0;
+    padding: 0px 0;
     background: black;
     border-bottom: 0px solid rgba(255, 255, 255, 0.3);
   }
