@@ -63,13 +63,13 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 300,
-        "color": "#00ffaa",
-        "opacity": 0.4,
+        "color": "#89ecda",
+        "opacity": 1,
         "width": 3
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 0.5,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -124,7 +124,7 @@ particlesJS('particles-js',
       "hide_card": false,
       "background_color": "",
       "background_image": "",
-      "background_position": "10% 100%",
+      "background_position": "10% 50%",
       "background_repeat": "no-repeat",
       "background_size": "canvas"
     }
