@@ -7,18 +7,58 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 html {
   width: 100%;
   height: 100%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  margin: 0 0 65px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 65px;
+
+}
+
+h2 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-align: center;
+  color: black;
+}
+h5 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+}
+
+h4{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+  margin: 0 0 5px;
+}
 h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
@@ -30,16 +70,18 @@ p {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
+  color: black;
 }
 @media (min-width: 768px) {
   p {
     margin: 0 0 10px;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1;
   }
 }
+
 a {
-  color: #42DCA3;
+  color: #3bd6c6;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -47,7 +89,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #b3ecec;
 }
 .light {
   font-weight: 400;
@@ -57,10 +99,10 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: white;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: black;
   background-color: rgba(255, 255, 255, 0);
   font-size: 12px;
 }
@@ -75,7 +117,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: white;
+  color: black;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -83,7 +125,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(67,232,216, 0.8);
   outline: none;
   background-color: transparent;
 }
@@ -96,7 +138,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(60, 220, 163, 0.5);
+  background-color: rgba(67,232,216,1);
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -106,14 +148,14 @@ a:focus {
     padding: 20px 0;
     border-bottom: none;
     letter-spacing: 1px;
-    background: transparent;
+    background: white;
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
     padding: 0px 0;
-    background: black;
+    background: white;
     border-bottom: 0px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -121,11 +163,12 @@ a:focus {
   display: table;
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
   color: white;
   background: ;
-  background-color: black;
+  background-image: url(../img/intro-bg1.jpg);
+  background-color: #3BD6C6;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -143,7 +186,7 @@ a:focus {
 }
 @media (min-width: 768px) {
   .intro {
-    height: 100%;
+    height: 90%;
     padding: 0;
   }
   .intro .intro-body .brand-heading {
@@ -157,6 +200,7 @@ a:focus {
   width: 70px;
   height: 70px;
   margin-top: 15px;
+  margin-bottom: 15px;
   padding: 7px 16px;
   border: 2px solid white;
   border-radius: 100% !important;
@@ -220,28 +264,146 @@ a:focus {
 .content-section {
   padding-top: 100px;
 }
-.download-section {
-  width: 100%;
-  padding: 50px 0;
+.team-section {
+  padding-bottom: : 60px;
   color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+}
+.about-background {
+  width: 100%;
+  padding-top: 0px;
+  background-color: #89ecda;
+
+  height: auto;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.contact-section {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: #d3d3d3;
+  /* The image used */
+
+  /* Full height */
+  height: auto;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 
-#welcome {
+.supporters-section{
   width: 100%;
-  padding: 100px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: white;
-  background: url(../img/intro-bg1.png) no-repeat center center scroll;
-  background-color: black;
+  background-color: #89ecda;
+  background-image: url(../img/contact-bg1.jpg);
+  height: auto;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.section_header {
+    margin-top: 4px;
+    margin-bottom: 42px;
+    font-size: 40px;
+    font-weight: 300;
+    color: black;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.section_header:after {
+    background: transparent;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    right: 0;
+    top: 22px;
+    width: 10%;
+    margin-left: -58px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../img/intro-bg5.jpg);
+
+    /* Full height */
+    height: 120px;
+    width: : 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome {
+  width: 100%;
+  padding: 100px 0;
+  color: white;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#team {
+  width: 100%;
+  padding: 100px 0;
+  color: white;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#supporters img {
+    display: block;
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%) brightness(120%);
+}
+
+#supporters img:hover{
+  background:#b3ecec;
+  filter: grayscale(0%);
 }
 
 .vertical-align {
@@ -253,8 +415,8 @@ a:focus {
 
 #map {
   width: 100%;
-  height: 200px;
-  margin-top: 100px;
+  height: 300px;
+  margin-top: 0px;
 }
 @media (min-width: 767px) {
   .content-section {
@@ -264,8 +426,8 @@ a:focus {
     padding: 100px 0;
   }
   #map {
-    height: 200px;
-    margin-top: 20px;
+    height: 300px;
+    margin-top: 0px;
   }
 }
 .btn {
@@ -278,16 +440,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 3px solid #3bd6c6;
+  color: #3bd6c6;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 3px solid #3bd6c6;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color:#3bd6c6;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -330,7 +492,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+  webkit-tap-highlight-color: rgba(211, 211, 211, 0.2);
 }
 
 /* ---- particles.js container ---- */
@@ -352,5 +514,5 @@ body {
 }
 #overlay {
   position: relative;
-  z-index:10;
+  z-index: 10;
 }
