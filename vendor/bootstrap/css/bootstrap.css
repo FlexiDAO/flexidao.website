@@ -6807,6 +6807,9 @@ from touching the row content above or below.
 .vert-offset-top-1{
     margin-top: 1em;
 }
+.vert-offset-top-05{
+    margin-top: 0.5em;
+}
 .vert-offset-top-0{
     margin-top: 0em;
 }
@@ -6846,6 +6849,9 @@ from touching the row content above or below.
 }
 .vert-offset-bottom-1{
     margin-bottom: 1em;
+}
+.vert-offset-bottom-05{
+    margin-bottom: 0.5em;
 }
 .vert-offset-bottom-0{
     margin-bottom: 0em;
